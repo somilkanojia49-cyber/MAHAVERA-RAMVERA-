@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mahavera Ramvera | Laundry & Dry Cleaning</title>
+
+<meta name="description"
+content="Mahavera Ramvera - Laundry, Dry Cleaning, Steam, Roll Press and All Types of Press. Serving Kandivali West, Borivali and Malad, Mumbai.">
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+
+<!-- Basic Security Policy -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self' https:; connect-src 'self' https:;">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+    line-height:1.6;
+    user-select:none;
+    -webkit-user-select:none;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(10,10,10,.96);
+    border-bottom:1px solid #333;
+    backdrop-filter:blur(10px);
+}
+
+.nav{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+nav{
+    display:flex;
+    gap:22px;
+}
+
+nav a{
+    color:#ddd;
+    font-size:14px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+.hero{
+    min-height:88vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:
+      radial-gradient(circle at 50% 30%,#252525 0,#0b0b0b 55%);
+}
+
+.hero-content{
+    width:100%;
+}
+
+.badge{
+    display:inline-block;
+    border:1px solid #555;
+    padding:7px 15px;
+    border-radius:30px;
+    color:#d4af37;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:clamp(42px,9vw,80px);
+    line-height:1.05;
+    letter-spacing:-2px;
+}
+
+.hero h1 span{
+    color:#d4af37;
+}
+
+.hero p{
+    max-width:650px;
+    margin:22px auto;
+    color:#bbb;
+    font-size:17px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:28px;
+}
+
+.btn{
+    padding:13px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    border:1px solid #555;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#d4af37;
+    color:#111;
+    border-color:#d4af37;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* SECTIONS */
+section{
+    padding:75px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#999;
+}
+
+/* SERVICES */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+
+.card{
+    background:#151515;
+    border:1px solid #292929;
+    border-radius:14px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#d4af37;
+}
+
+.icon{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    margin-bottom:7px;
+}
+
+.card p{
+    color:#999;
+    font-size:14px;
+}
+
+/* PRICE */
+.price-table{
+    overflow:hidden;
+    border:1px solid #292929;
+    border-radius:14px;
+    background:#151515;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:16px 20px;
+    border-bottom:1px solid #292929;
+}
+
+.price-row:last-child{
+    border-bottom:none;
+}
+
+.price{
+    color:#d4af37;
+    font-weight:bold;
+}
+
+/* AREAS */
+.area-box{
+    text-align:center;
+    background:#151515;
+    border:1px solid #292929;
+    padding:35px 20px;
+    border-radius:15px;
+}
+
+.area-box strong{
+    display:block;
+    font-size:20px;
+    margin:8px;
+}
+
+.area-box p{
+    color:#999;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+.contact-card{
+    max-width:700px;
+    margin:auto;
+    background:#151515;
+    border:1px solid #292929;
+    padding:35px 20px;
+    border-radius:15px;
+}
+
+.contact-card p{
+    color:#aaa;
+    margin:10px 0;
+}
+
+.phone{
+    color:#d4af37;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    border-top:1px solid #292929;
+    padding:30px 0;
+    text-align:center;
+    color:#777;
+    font-size:13px;
+}
+
+footer strong{
+    color:#d4af37;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+    .nav{
+        min-height:62px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    section{
+        padding:60px 0;
+    }
+
+    .hero{
+        min-height:82vh;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .price-row{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">
+Mahavera <span>Ramvera</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#rates">Rates</a>
+<a href="#areas">Areas</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<!-- HOME -->
+<section class="hero" id="home">
+<div class="container hero-content">
+
+<div class="badge">PREMIUM LAUNDRY & DRY CLEANING</div>
+
+<h1>
+Mahavera <span>Ramvera</span>
+</h1>
+
+<p>
+Professional laundry, dry cleaning, steam, roll press
+and all types of press services in Mumbai.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="https://wa.me/919819190265"
+target="_blank"
+rel="noopener noreferrer">
+WhatsApp Us
+</a>
+
+<a class="btn"
+href="tel:+919819190265">
+Call Now
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+<div class="container">
+
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Quality care for your clothes</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🧺</div>
+<h3>Laundry</h3>
+<p>Professional washing and fabric care.</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Dry Cleaning</h3>
+<p>Careful cleaning for special garments.</p>
+</div>
+
+<div class="card">
+<div class="icon">♨️</div>
+<h3>Steam</h3>
+<p>Professional steam treatment for a fresh finish.</p>
+</div>
+
+<div class="card">
+<div class="icon">👔</div>
+<h3>Roll Press</h3>
+<p>Clean and professional pressing service.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔥</div>
+<h3>Normal Press</h3>
+<p>Everyday clothes pressed neatly.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏨</div>
+<h3>Hospital & Hostel</h3>
+<p>Laundry services available for institutions.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- RATES -->
+<section id="rates">
+<div class="container">
+
+<div class="section-title">
+<h2>Our Rates</h2>
+<p>Selected service rates</p>
+</div>
+
+<div class="price-table">
+
+<div class="price-row">
+<span>Steam</span>
+<span class="price">₹60</span>
+</div>
+
+<div class="price-row">
+<span>Dry Cleaning</span>
+<span class="price">₹149</span>
+</div>
+
+<div class="price-row">
+<span>Roll Press</span>
+<span class="price">₹90</span>
+</div>
+
+<div class="price-row">
+<span>Normal Press</span>
+<span class="price">₹10</span>
+</div>
+
+<div class="price-row">
+<span>Blanket</span>
+<span class="price">₹30</span>
+</div>
+
+<div class="price-row">
+<span>Drawsheet</span>
+<span class="price">₹12</span>
+</div>
+
+<div class="price-row">
+<span>Bedsheet</span>
+<span class="price">₹15</span>
+</div>
+
+<div class="price-row">
+<span>Shirt & Pant</span>
+<span class="price">₹10</span>
+</div>
+
+<div class="price-row">
+<span>Solapuri Chadar</span>
+<span class="price">₹20</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- AREAS -->
+<section id="areas">
+<div class="container">
+
+<div class="section-title">
+<h2>Service Areas</h2>
+<p>Serving customers across Mumbai</p>
+</div>
+
+<div class="grid">
+
+<div class="area-box">
+<strong>Kandivali West</strong>
+<p>Our main service location</p>
+</div>
+
+<div class="area-box">
+<strong>Borivali</strong>
+<p>Pickup & service area</p>
+</div>
+
+<div class="area-box">
+<strong>Malad</strong>
+<p>Pickup & service area</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container contact">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+<p>Get in touch for laundry & dry cleaning services</p>
+</div>
+
+<div class="contact-card">
+
+<p>📍 Shop Address</p>
+
+<p>
+Mahavir Nagar, Datta Mandir,<br>
+Dhanukar Wadi, New Link Road,<br>
+Kandivali West, Mumbai - 400067
+</p>
+
+<br>
+
+<p>📞 Contact</p>
+
+<p class="phone">
++91 98191 90265
+</p>
+
+<p class="phone">
++91 84335 40859
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="https://wa.me/919819190265"
+target="_blank"
+rel="noopener noreferrer">
+Chat on WhatsApp
+</a>
+
+<a class="btn"
+href="tel:+919819190265">
+Call 9819190265
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container">
+
+<strong>Mahavera Ramvera</strong><br>
+
+Laundry / Dry Cleaning / Steam / Roll Press<br>
+All Types of Press Done Here
+
+<br><br>
+
+© 2026 Mahavera Ramvera. All Rights Reserved.
+
+</div>
+</footer>
+
+
+<script>
+/*
+  Basic copy-resistance.
+  IMPORTANT:
+  This is only a deterrent, not absolute security.
+*/
+
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+
+document.addEventListener("selectstart", function(e){
+    e.preventDefault();
+});
+
+document.addEventListener("dragstart", function(e){
+    e.preventDefault();
+});
+
+document.addEventListener("keydown", function(e){
+
+    /* Disable common source/copy shortcuts */
+    if(
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && ["U","S","C","A"].includes(e.key.toUpperCase()))
+    ){
+        e.preventDefault();
+        return false;
+    }
+});
+
+/* Stop opening links in unexpected frames */
+if(window.top !== window.self){
+    window.top.location = window.self.location;
+}
+</script>
+
+</body>
+</html>
